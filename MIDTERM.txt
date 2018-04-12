@@ -1,0 +1,84 @@
+#ELLENE GAY S. DANIEL
+#MIDTERM EXAMINATION
+
+def match_a():
+    print ("Function match_a() \n")
+
+    dan1 = input ("Enter 1st input:")
+    dan2 = input ("Enter 2nd input:")
+    dan3 = input ("Enter 3rd input:")
+
+    dan22 = []
+    dan33 = []
+    dan11 = []
+
+    
+    for i in dan1:
+        if len(i) != 1:      #exclude character
+            if i == i[::-1]: #Palindrome checker
+                dan11.append(i)
+
+    for i in dan2:
+        if len(i) != 1:      #exclude character
+            if i == i[::-1]: #Palindrome checker
+                dan22.append(i)
+
+    for i in dan3:
+        if len(i) != 1:      #exclude character
+            if i == i[::-1]: #Palindrome checker
+                dan33.append(i)
+
+    print "1st output: ",len(dan11)
+    print "2nd output: ",len(dan22)
+    print "3rd output: ",len(dan33)
+
+match_a()
+print ("\n\n")
+
+
+
+
+
+
+def front_x():
+    print ("Function front_x()\n")
+
+    aub1 = input ("Enter 1st input:")
+    aub2 = input ("Enter 2nd input:")
+    aub3 = input ("Enter 3rd input:")
+
+    dan11 = []
+    dan111 = []
+    dan22 = []
+    dan222 = []
+    dan33 =[]
+    dan333 = []
+
+    for i in dan1:
+        if i.startswith('x'): #new list of strings that starts with 'x' from others
+            dan11.append(i)
+        else:
+            dan111.append(i) #new list of other strings
+            
+    print "1st output: ",sorted(dan11) + sorted(dan111) #to alphabetically arranged
+
+
+    for i in dan2:
+        if i.startswith('x'): #new list of strings that starts with 'x' from others
+            dan22.append(i)
+        else:
+            dan222.append(i) #new list of other strings
+            
+    print "2nd output: ",sorted(dan22) + sorted(dan222) #to alphabetically arranged
+
+
+    for i in dan3:
+        if i.startswith('x'): #new list of strings that starts with 'x' from others
+            dan33.append(i)
+        else:
+            dan333.append(i) #new list of other strings
+            
+    print "3rd output: ",sorted(dan33) + sorted(dan333) #to alphabetically arranged
+
+    
+front_x()
